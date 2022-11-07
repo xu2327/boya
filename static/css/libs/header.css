@@ -1,0 +1,116 @@
+/* 头部 */
+.header,.banner,.footer{
+    width: 100%;
+}
+
+.header,.footer{
+    background-color: #191c3c;
+}
+.header .header-container,.footer .footer-container{
+    width: 1000px;
+    /* 这个高  不是写固定的  而是被内容撑开 */
+    margin: 0 auto;
+}
+
+.header-left{
+    width: 20%;
+    background: url('http://www.boyaa.com/images/logo.png') no-repeat center;
+    float: left;
+}
+
+
+.header-center{
+    float: left;
+    width: 60%;
+    height: 60px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.header-center a{
+    color:#818496;
+    text-decoration: none;
+    display: block;
+}
+
+.header-center ul{
+    overflow: hidden;
+    width: 800px;
+}
+.header-center ul li{
+    /* width: calc((100% - 6px)/6); */
+    padding: 0 20px;
+    box-sizing: border-box;
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    border-right: 1px solid #252947;
+}
+
+.header-center li:first-child{
+    background-color: #252947;
+}
+.header-center li:nth-child(7){
+    border-right-color: transparent;
+    margin-left: -10px;   
+}
+.header-center li:nth-child(8),
+.header-center li:nth-child(9),
+.header-center li:nth-child(10){    
+    display: none;
+}
+
+
+.header-center .active{
+    color: #fff;
+    opacity: 0.8;
+    
+    
+}
+.header-center li:hover a{
+    color: #fff;
+}
+
+.header-center li:nth-child(7){
+    display: flex;
+    align-items: center;
+    height: 60px;
+    line-height: 34px;
+
+}
+
+.last-active{
+    width: 100px;
+    height: 34px;
+    color: #fff !important;
+    background-color: #38b774;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.header-center ul li .last-active:hover{
+    cursor: pointer;
+    background-color: #2ba364;
+}
+
+
+
+.header-right{
+    clear: both;
+    float: right;
+    margin-top: -60px;
+}
+
+.header-right div:first-child{
+    text-align: center;
+    line-height: 60px;
+    color: #38b774;
+    float: left;
+}
+.header-right div:first-child span{
+    color: #444866;
+    padding: 0 10px;
+}
+.header-right div:first-child span:hover{
+    cursor: pointer;
+    color: #2ba364;
+}

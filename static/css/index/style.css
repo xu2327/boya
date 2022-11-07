@@ -1,0 +1,385 @@
+/* 首页主体css */
+.banner {
+    background: url("http://www.boyaa.com/pic/banner20220324.jpg")center center no-repeat;
+    height: 460px;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner ul {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.banner ul li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.banner ul li:nth-child(1) {
+    background-color:rgba(255, 255, 255, .5);
+}
+
+.banner ul li:nth-child(3) {
+    background-color:rgba(255, 255, 255, .5);
+}
+
+.banner ul li:nth-child(4) {
+    background-color:rgba(255, 255, 255, .5);
+}
+
+
+.main {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.main ul {
+    overflow: hidden;
+}
+
+.main li {
+    float: left;
+    list-style: none;
+    /* css函数  通过它计算css数值 */
+    width: calc((100% - 90px)/4);
+}
+
+.main li:nth-child(2) {
+    margin: 0 30px;
+}
+
+.main li:nth-child(3) {
+    margin: 0 30px;
+    margin-left: 0px;
+}
+
+
+
+
+.main-join {
+    text-align: center;
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+.main-join h3 {
+    padding: 8px 0px;
+    font-weight: 900;
+}
+
+.main-join p {
+    padding: 10px 0px;
+    color: #38b774;
+    font-size: 12px !important;
+    background: url("http://www.boyaa.com/images/arrow.png") no-repeat 150px center;
+}
+
+.main ul li:hover p {
+    color: #fff;
+    background-image: url("http://www.boyaa.com/images/arrow_hover.png");
+}
+
+.main ul li:hover h3 {
+    color: #fff;
+}
+
+.main ul li:hover {
+    background-color: #38b774;
+    opacity: .9;
+    transition: .4s;
+}
+
+
+
+/* 三个点 */
+.main .hd {
+    margin: 20px 0px;
+    height: 1px;
+    background-color: #dbe1e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hd div {
+    width: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hd div span {
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.hd div span:nth-child(1) {
+    background-color: #38b774;
+}
+
+
+
+
+.list-container {
+    background: url(http://www.boyaa.com/images/indexmainbg.jpg) repeat-x -184px bottom;
+    background-size: 100%;
+    padding-bottom: 57px;
+}
+
+.list {
+    width: 1000px;
+    height: auto;
+    /* background-color: cornflowerblue; */
+    margin: 0 auto;
+}
+
+.list div {
+    width: calc((100%)/2);
+
+}
+.list-left .list-top span a {
+    display: inline-block;
+    width: 64px;
+    text-align: center;
+    height: 26px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #30bd72;
+    border: 1px solid #33b972;
+    text-decoration: none;
+    font-size: 12px !important;
+    margin-left: 220px;
+    margin-top: 50px;
+    padding-left: 1px;
+    transition: .3s;
+}
+sup{
+    vertical-align: super;
+    font-size: small;
+}
+.list .list-top span a:hover {
+    background-color: #33b972;
+    color: #fff;
+}
+.list .list-top span p:hover{
+    cursor: pointer;
+}   
+
+.list .list-left,
+.list .list-right {
+    float: left;
+
+}
+
+.list .list-left {
+    background: url("http://www.boyaa.com/images/bynewsbg.jpg") no-repeat 0px 0px;
+}
+
+.list .list-left ul,
+.list .list-right ul {
+
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.list .list-left li a,
+.list .list-right li a {
+    text-decoration: none;
+    color: #232221;
+    font-size: 14px;
+}
+
+.list .list-left li {
+    padding: 15px 0px;
+    border-bottom: 1px #dbe1e7 solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .list-right ul {
+    height: 180px;
+}
+
+.list .list-right li {
+    height: 38px;
+    padding: 15px 0px;
+    border-bottom: 1px solid #6fdea3;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-right .list-top {
+    color: #fff;
+}
+
+.list-right .list-top h2{
+    margin-left: 80px;
+}
+.list-right .list-top p {
+    margin-left: 80px;
+    font-size: 12px !important;
+    margin-top: 5px;
+}
+
+
+.list-right .list-top span a {
+    display: inline-block;
+    width: 64px;
+    text-align: center;
+    height: 26px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #30bd72;
+    border: 1px solid #33b972;
+    text-decoration: none;
+    font-size: 12px !important;
+    margin-left: 220px;
+    margin-top: 50px;
+    padding-left: 1px;
+    transition: .3s;
+}
+
+.list-right .list-top h2 {
+    font-size: 28px !important;
+    display: block;
+    line-height: 34px;
+    font-weight: 700;
+    padding-top: 38px;
+}
+
+.list-right .list-top span a {
+    display:block;    
+    margin-left: 210px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    position: relative;
+    top:-100px;
+}
+.list-right .list-top span a:hover{
+    background-color: #FFF;
+    color: #33b972;
+}
+
+.list .list-left li a:hover {
+    color: #38b774;
+}
+
+.list .list-left li span {
+    color: #afbecf;
+    font-size: 12px !important;
+}
+
+.list-top {
+    width: 100% !important;
+    height: 119px;
+}
+
+
+
+
+
+
+.list .list-right {
+    background: url("http://www.boyaa.com/images/byhrbg3.jpg?v1") no-repeat 0px 0px;
+}
+
+.list .list-right li {
+    width: calc(100% - 180px);
+}
+
+.list .list-right li a {
+    color: #fff;
+}
+
+.imgActive {
+    display: none;
+}
+
+
+
+
+
+
+/* 底部广告 */
+.aslide {
+    width: 100%;
+    background: #232221;
+    color: #848484;
+    padding: 20px 0;
+    line-height: 15px;
+    font-size: 14px;
+}
+
+.aslide div {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+footer {
+    background-color: #191d3a;
+    width: 100%;
+    clear: both;
+    line-height: 22px;
+}
+
+footer .foot{
+    display: none;
+}
+
+footer .area {
+    width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+    color: #6c6e7e;
+    box-sizing: border-box;
+}
+
+footer .area .c1{
+    font-size: 12px !important;
+}
+
+footer .area img {
+    width: 36px;
+    height: 50px;
+    margin-top: -20px;
+    position: relative;
+    top: 15px;
+}
+
+.cl .fl a{
+    color: #6C6E7E;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.gotop{
+    position: fixed;
+    right: 15px;
+    bottom: 75px;
+    width: 68px;
+    height: 29px;
+    background: url("http://www.boyaa.com/images/top.png") no-repeat 0 -40px;
+    z-index: 999;
+}
+
+.gotop:hover{
+    background: url("http://www.boyaa.com/images/top.png") no-repeat 0 0;
+}

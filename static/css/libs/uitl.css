@@ -1,0 +1,284 @@
+/* 媒体查询 */
+@media screen and (max-width:1024px) {
+
+    .header .header-container,
+    .footer .footer-container {
+        width: 100%;
+        height: 60px;
+    }
+
+    .header-right div:nth-child(1) {
+        pointer-events: none;
+        margin-left: -50px;
+    }
+
+    .header-right div:nth-child(2):hover {
+        cursor: pointer;
+    }
+
+    .banner {
+        height: calc(46vw) !important;
+        background-color: chartreuse;
+    }
+
+    .main {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+
+    .main li {
+        width: calc((100% - 20px)/2);
+        margin: 0px 5px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .main-join p {
+        display: none;
+    }
+
+    .main-join {
+        /* 禁止鼠标悬浮 */
+        pointer-events: none;
+    }
+
+    .main .hd {
+        height: 60px;
+    }
+
+    .hd div {
+        display: none;
+    }
+
+    .main .hd p {
+        display: block !important;
+    }
+
+    .main ul li:hover p {
+        pointer-events: none;
+
+    }
+
+    .main ul li:hover h3 {
+        pointer-events: none;
+        color: #000;
+    }
+
+    .main ul li:hover {
+        pointer-events: none;
+    }
+
+
+
+    .list {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* 左边 */
+    .list .list-left {
+        background: #fafafa url("http://www.boyaa.com/img_phone/new_bg2.png") no-repeat 0px 0px;
+        background-size: 100% 113px;
+    }
+
+    .list .list-left .list-top::before {
+        content: '';
+        display: inline-block;
+        width: 80px;
+        height: 113px;
+        background: url("http://www.boyaa.com/img_phone/news.png") no-repeat center center;
+    }
+
+    /* .list-left .list-top span{
+        margin-left: -200px;
+    } */
+
+    .list-left .list-top span a {
+        margin-left: 20px;
+        position: relative;
+        top: -70px;
+    }
+
+    .list-left .list-top span::before {
+        content: '博雅新闻';
+        font-weight: bold;
+        font-size: 20px;
+        color: #444866;
+        margin-left: 0;
+        position: relative;
+        top: -65px;
+    }
+
+    .list-left .list-top span::after {
+        content: 'BOYAA NEWS';
+        margin-left: -175px;
+        font-size: 12px;
+        position: relative;
+        top: -50px;
+    }
+
+
+
+    /* 右边 */
+    .list-left,
+    .list-right {
+        width: calc(100%) !important;
+    }
+
+    /* .list .list-right li{
+        width: calc(100% - 450px);
+    } */
+    .list .list-right {
+        margin-top: 20px;
+        position: relative;
+        padding-bottom: 20px;
+        background: #33B972;
+    }
+
+    .list-right .list-top h2 {
+        line-height: 25px;
+    }
+
+    .list .list-right .imgActive {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: -30px;
+    }
+
+    .list .list-right ul::before {
+        content: '社会招聘岗位：';
+        color: #FFF;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .list-top {
+        height: 113px;
+
+    }
+
+    .list-right .list-top {
+        background: url('http://www.boyaa.com/img_phone/person2.png') no-repeat 10px;
+    }
+
+    /* 头部样式开始 */
+    .header-left {
+        width: 40%;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header-center {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 1px;
+        
+    }
+    .header-center a{
+        background-color: #252947;
+        font-size: 16px;
+        text-align: left;
+        color: #FFF;  
+        border-top: 1px solid #191c3c;
+    }
+    .header-center a:nth-child(1){
+        border-bottom: 1px solid #191c3c;
+    }
+    .last-active{
+        pointer-events: none;
+        display: block;
+        clear: both;
+    }
+    .header-center ul li {
+        padding:0;
+        width: 650px;
+        height: 58px;
+        text-indent: 20px;
+    }
+    .header-center ul li:nth-child(7){
+        padding: 0;
+        margin: 0;
+        width: 650px;
+        height: 35px !important;
+        display: block;
+        clear: both;
+    }
+    .header-center ul li:nth-child(7) a{
+        width: 650px;
+        height: 58px;
+    }
+    
+    .header-center ul li:nth-child(8),
+    .header-center ul li:nth-child(9),
+    .header-center ul li:nth-child(10){
+        display: block;
+    }
+
+    
+
+
+    .cart {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url("../../images/三横线.png") no-repeat center;
+        background-size: 100%;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+    /* 头部样式结束 */
+
+    /* 底部样式 */
+    .aslide div {
+        width: 100%;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    footer .cl {
+        width: 100%;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    footer .foot {
+        display: block;
+        background: #191c3c;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .foot p {
+        text-align: center;
+        color: #abafd0;
+        line-height: 25px;
+    }
+    .foot a{
+        text-decoration: none;
+        color:#abafd0 ;
+    }
+    .foot .p1 .on{
+        color: #2bc271;
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    .gotop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-left {
+        width: 50%;
+    }
+}
